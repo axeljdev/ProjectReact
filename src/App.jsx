@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import TurtleCard from "./components/TurtleCard";
 import './App.css'
+import RaphaeloCard from './components/Raphaelo';
 
 const ninjaTurtles =[{
   name : "Leonardo",
@@ -19,8 +20,6 @@ const ninjaTurtles =[{
   img : "img/Donatello2.png",
 },
 ] 
-
-
 function App() {
   const [pizza, setPizza] = useState(0)
   const increment=(()=> setPizza(pizza+1))
