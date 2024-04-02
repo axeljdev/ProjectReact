@@ -12,6 +12,7 @@ function RaphaeloCard ({img, name}) {
         <section className="card">
             <img src={img} alt={name} />
             <h2>{name}</h2>
+            <button type="button"> Voir plus</button>
             <button type="button"
             onClick={handLeClick}>{pizza} 🍕</button>
         </section>
