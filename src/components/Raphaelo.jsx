@@ -1,7 +1,7 @@
 function RaphaeloCard () {
     return (
         <>
-        <img src= 'img/Raphaelo.png' alt="" />
+        <img src= 'img/Raphaello2.png' alt="" />
         </>
     )
 }
