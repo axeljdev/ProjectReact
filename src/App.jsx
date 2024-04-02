@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import RaphaeloCard from './components/Raphaelo'
 import './App.css'
+import LeonardoCard from './Components/Leonardo'
 
 const ninjaTurtles =[{
   name : "Leonardo",
@@ -26,7 +26,10 @@ function App() {
 
   return (
     <>
-     <RaphaeloCard/>
+    <RaphaeloCard/>
+
+    <LeonardoCard
+    ninjaTurtles = {ninjaTurtles} />
     </>
   )
 }
