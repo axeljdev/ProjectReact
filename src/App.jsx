@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import TurtleCard from './components/TurtleCard';
 
 const ninjaTurtles = [{
   name: "Leonardo",
