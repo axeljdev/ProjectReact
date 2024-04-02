@@ -1,19 +1,32 @@
 import { useState } from 'react'
+import RaphaeloCard from './components/Raphaelo'
 import './App.css'
+
+const ninjaTurtles =[{
+  name : "Leonardo",
+  img : "img/Leonardo2.png",
+},
+{
+  name : "Michelangelo",
+  img : "img/Michelangelo2.png",
+},
+{
+  name : "Raphaelo",
+  img : "img/Raphaello2.png",
+},
+{
+  name : "Donatello",
+  img : "img/Donatello2.png",
+},
+] 
+
 
 function App() {
   const [pizza, setPizza] = useState(0)
 
   return (
     <>
-      <div className="card">
-        <button onClick={() => setPizza((pizza) => pizza + 1)}>
-          Pizza 🍕 {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
+     <RaphaeloCard/>
     </>
   )
 }
