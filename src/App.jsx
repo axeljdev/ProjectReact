@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import RaphaeloCard from './components/Raphaelo'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import MichelAngelo from "./components/MichelAngelo";
 import './App.css'
 
 const ninjaTurtles =[{
@@ -26,7 +28,9 @@ function App() {
 
   return (
     <>
-     <RaphaeloCard/>
+     <MichelAngelo name= {ninjaTurtles[1].name}
+     img= {ninjaTurtles[1].img}
+     />
     </>
   )
 }
