@@ -10,7 +10,7 @@
 
 .card {
   margin: 2rem;
-  border: 1px solid black;
+  border: 1px solid;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -26,8 +26,4 @@
 
 .card:nth-of-type(2) {
   grid-column: 2;
-}
-
-.card button {
-  background-color: white;
 }
