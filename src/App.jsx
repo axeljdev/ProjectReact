@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
+import RaphaeloCard from './components/Raphaelo';
 
 const ninjaTurtles = [{
   name: "Leonardo",
@@ -18,20 +19,15 @@ const ninjaTurtles = [{
   img: "img/Donatello2.png",
 },
 ]
-
-
 function App() {
-  const [pizza, setPizza] = useState(0)
 
   return (
     <>
-    <section className='card'>
-      {ninjaTurtles.map(turtle => <TurtleCard
-        key={turtle.name}
-        img={turtle.img}
-        name={turtle.name}
-      />)}
-      </section>
+     {ninjaTurtles.map((turtle) =>
+     <RaphaeloCard
+     key={turtle.name}
+     img={turtle.img}
+     name={turtle.name}/>)}
     </>
   )
 }
