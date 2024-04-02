@@ -1,8 +1,5 @@
 import { useState } from 'react'
-<<<<<<< HEAD
-=======
 import RaphaeloCard from './components/Raphaelo'
->>>>>>> 32fd931e5c3af60cb16dfd1b0593ed920a1740b9
 import './App.css'
 import TurtleCard from './components/donatello'
 
