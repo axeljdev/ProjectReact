@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import MichelAngelo from "./components/MichelAngelo";
+import TurtleCard from "./components/TurtleCard";
 import './App.css'
 
 const ninjaTurtles =[{
@@ -24,13 +22,19 @@ const ninjaTurtles =[{
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [pizza, setPizza] = useState(0)
+  const increment=(()=> setPizza(pizza+1))
 
   return (
     <>
-     <MichelAngelo name= {ninjaTurtles[1].name}
-     img= {ninjaTurtles[1].img}
-     />
+     {ninjaTurtles.map((turtle) => <TurtleCard 
+      name = {turtle.name}
+      img = {turtle.img}
+      key = {turtle.name}
+      
+     />)}
+
+      
     </>
   )
 }
