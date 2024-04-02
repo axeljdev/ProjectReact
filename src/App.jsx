@@ -1,8 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import MichelAngelo from "./components/MichelAngelo";
+import { useEffect, useState } from 'react'
 import './App.css'
+import RaphaeloCard from './components/Raphaelo';
 
 const ninjaTurtles =[{
   name : "Leonardo",
@@ -21,16 +19,15 @@ const ninjaTurtles =[{
   img : "img/Donatello2.png",
 },
 ] 
-
-
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <MichelAngelo name= {ninjaTurtles[1].name}
-     img= {ninjaTurtles[1].img}
-     />
+     {ninjaTurtles.map((turtle) =>
+     <RaphaeloCard
+     key={turtle.name}
+     img={turtle.img}
+     name={turtle.name}/>)}
     </>
   )
 }
