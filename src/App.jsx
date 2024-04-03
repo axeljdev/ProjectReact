@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+
 import './App.css'
-import RaphaeloCard from './components/TurtleCard';
+import TurtleCard from './components/TurtleCard';
 
 const ninjaTurtles =[{
   name : "Leonardo",
@@ -20,14 +20,14 @@ const ninjaTurtles =[{
 },
 ] 
 function App() {
+
   return (
     <>
      {ninjaTurtles.map((turtle) =>
-     <RaphaeloCard
+     <TurtleCard
      key={turtle.name}
      img={turtle.img}
-     name={turtle.name}
-     handLeClick={handLeClick}/>)}
+     name={turtle.name}/>)}
     </>
   )
 }

@@ -1,7 +1,8 @@
 import { useState } from "react"
 
+useState
 
-function RaphaeloCard ({img, name}) {
+function TurtleCard ({img, name}) {
   const [pizza, setPizza] = useState(0)
   const handLeClick =() => {
     setPizza(pizza +1)
@@ -21,4 +22,4 @@ function RaphaeloCard ({img, name}) {
     )
 }
 
-export default RaphaeloCard
+export default TurtleCard
