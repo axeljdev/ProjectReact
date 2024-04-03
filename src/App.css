@@ -10,7 +10,7 @@
 
 .card {
   margin: 2rem;
-  border: 1px solid black;
+  border: 1px solid;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -29,5 +29,5 @@
 }
 
 .card button {
-  background-color: white;
+  background-color:;
 }
