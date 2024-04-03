@@ -7,27 +7,66 @@
   grid-template-columns: 2fr;
   grid-template-rows: auto;
 }
-
 .card {
   margin: 2rem;
   border: 1px solid;
   border-radius: 1rem;
   padding: 1rem;
 }
-
+.card:first-of-type {
+  background-color: rgba(4, 81, 247, 0.531);
+}
+.card:nth-of-type(2) {
+  background-color: rgba(255, 162, 0, 0.714);
+}
+.card:nth-of-type(3) {
+  background-color: rgba(199, 4, 4, 0.765);
+}
+.card:last-of-type {
+  background-color: rgba(111, 0, 159, 0.591);
+}
+/* .cardDetails:first-of-type {
+  background-color: rgba(4, 81, 247, 0.531);
+}
+.cardDetails:nth-of-type(2) {
+  background-color: rgba(255, 162, 0, 0.714);
+}
+.cardDetails:nth-of-type(3) {
+  background-color: rgba(199, 4, 4, 0.765);
+}
+.cardDetails:last-of-type {
+  background-color: rgba(111, 0, 159, 0.591);
+} */
 .card img {
   max-width: 10rem;
   max-height: 10rem;
 }
-
 .card:nth-of-type(1) {
   grid-column: 1;
 }
-
 .card:nth-of-type(2) {
   grid-column: 2;
 }
-
-.card button {
-  background-color:;
+/* .cardDetails {
+  margin: 2rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.cardDetails img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+.cardDetails:nth-of-type(1) {
+  grid-column: 1;
+}
+.cardDetails:nth-of-type(2) {
+  grid-column: 1;
+}
+.buttonDetails {
+  transform: translateX(7.5rem);
+} */
+.buttonReturn {
+  width: 7rem;
+  transform: translateX(36rem);
 }
